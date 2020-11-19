@@ -1,0 +1,215 @@
+html,
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.columnHeight {
+    height: 500px;
+}
+
+.mapa {
+    margin: 10px auto;
+    width: 100%;
+    height: 500px;
+}
+
+#equiposList,
+#mapaSmall {
+    display: none;
+}
+
+.itemPS,
+.itemEquipo,
+.itemPSAll {
+    cursor: pointer;
+}
+
+.itemPSSelected {
+    background-color: dodgerblue !important;
+}
+
+.brand-logo img {
+    height: 50px;
+    margin-top: 7px;
+}
+
+#infoPSEquipo {
+    display: none;
+}
+
+#PSMapLocation {
+    height: 350px;
+}
+
+
+/* Autocompletar */
+
+.pac-container {
+    z-index: 1051 !important;
+}
+
+.collapsible-body {
+    padding: 5px;
+}
+
+.itemPSFilter {
+    display: none;
+}
+
+.modal {
+    max-height: 80%;
+    width: 80%;
+}
+
+.equipoPre {
+    font-size: 1.5rem;
+}
+
+.cancelarPS {
+    display: none;
+}
+
+.cancelarPSCola {
+    display: none;
+}
+
+
+/* Estilos estados */
+
+.estadoPS3 {
+    border-left: 15px solid grey;
+}
+
+.estadoPS5 {
+    border-left: 15px solid pink;
+}
+
+.estadoPS6 {
+    border-left: 15px solid orange;
+}
+
+.estadoPS7 {
+    border-left: 15px solid green;
+}
+
+.estadoPS8 {
+    border-left: 15px solid blue;
+}
+
+
+/* Estilos tipo PS */
+
+.tipoPS1 {
+    border-right: 15px solid green;
+}
+
+.tipoPS3 {
+    border-right: 15px solid orange;
+}
+
+.tipoPS3 {
+    border-right: 15px solid cornflowerblue;
+}
+
+
+/* Estilos estados Equipo */
+
+.estadoEquipo34 {
+    border-left: 15px solid orange;
+}
+
+.estadoEquipo35 {
+    border-left: 15px solid blue;
+    background-color: #AAA !important;
+}
+
+.estadoEquipo36 {
+    border-left: 15px solid green;
+}
+
+.estadoEquipo37 {
+    border-left: 15px solid pink;
+}
+
+.estadoEquipo38 {
+    border-left: 15px solid grey;
+    background-color: #AAA !important;
+}
+
+.estadoEquipo38.itemPSSelected,
+.estadoEquipo35.itemPSSelected {
+    border-right: 15px solid dodgerblue;
+    background-color: #AAA !important;
+}
+
+.estadoEquipo39 {
+    border-left: 15px solid black;
+}
+
+.estadoEquipo40 {
+    border-left: 15px solid blue;
+}
+
+.estadoEquipoBloqueado {
+    border-left: 15px solid grey;
+    background-color: #AAA !important;
+}
+
+.estadoEquipoBloqueado.itemPSSelected {
+    border-right: 15px solid dodgerblue;
+    background-color: #AAA !important;
+}
+
+
+/* Estilos urgencia */
+
+.urgencia1 {
+    background-color: #ff7043 !important;
+}
+
+.urgencia2 {
+    background-color: #f44336 !important;
+}
+
+.urgencia1.itemPSSelected {
+    background-color: dodgerblue !important;
+    /*  color: #ff7043;
+  font-weight: bold;*/
+}
+
+.urgencia2.itemPSSelected {
+    background-color: dodgerblue !important;
+    /*color: #f44336;
+  font-weight: bold;*/
+}
+
+.urgencia1.itemPSSelected .title {
+    background-color: #ff7043 !important;
+}
+
+.urgencia2.itemPSSelected .title {
+    background-color: #f44336 !important;
+}
+
+.modal {
+    overflow: visible;
+}
+
+.classPersonalSelect {
+    width: 300px;
+}
+
+.classPersonalSelect .select-wrapper input.select-dropdown {
+    margin: 10px 0 0 0 !important;
+}
+
+#sidenav-overlay {
+    z-index: 996;
+}
